@@ -1,6 +1,5 @@
 import './Layout.scss'
-import {Sidebar} from ".."
-
+import { Sidebar } from '..'
 
 const Layout = () => {
   return (
