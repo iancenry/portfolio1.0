@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 65px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -69,12 +69,54 @@
         transition: all 0.3s ease-out;
       }
 
-      &:first-child{
-        &::after{
-            content: 'HOME';
+      &:first-child {
+        &::after {
+          content: 'HOME';
         }
       }
+    }
 
+    a.about-link {
+      &::after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &::after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd700;
+      }
     }
   }
+
+  ul {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li{
+        a {
+            padding: 7px 0;
+            display: block;
+            font-size: 16px;
+            line-height: 16px;
+
+            &:hover svg {
+                color: #ffd700;
+            }
+        }
+    }
+  }
+
 }
