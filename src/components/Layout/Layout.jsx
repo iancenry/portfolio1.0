@@ -12,7 +12,7 @@ const Layout = () => {
         <span className="page__tags page__bottom-tags">
           &lt;/body&gt;
           <br />
-          <span className="page__bottom-tag">&lt;/html&gt;</span>
+          <span className="page__bottom-tag-html">&lt;/html&gt;</span>
         </span>
       </div>
     </div>
@@ -20,4 +20,3 @@ const Layout = () => {
 }
 
 export default Layout
-// ☻
