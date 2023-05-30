@@ -1,3 +1,5 @@
+$primary-color: #ffd700;
+
 .nav-bar {
   background: #181818;
   width: 65px;
@@ -46,7 +48,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: $primary-color;
 
         svg {
           opacity: 0;
@@ -90,7 +92,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: $primary-color;
       }
     }
   }
@@ -113,7 +115,7 @@
             line-height: 16px;
 
             &:hover svg {
-                color: #ffd700;
+                color: $primary-color;
             }
         }
     }
