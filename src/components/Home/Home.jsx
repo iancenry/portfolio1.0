@@ -1,14 +1,15 @@
- import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-s.png'
 import './Home.scss'
 import { useEffect, useState } from 'react'
-import {AnimatedLetters} from '../'
+import {AnimatedLetters, Logo} from '../'
 
  const Home = () => {
   //default animation name = text-animate
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p','e', 'r']
+  const nameArray = "lobodan".split("")
+  const jobArray = [..."web developer"]
+  //const jobArray = "web developer".split("")
 
   useEffect(() => {
     setTimeout(() => setLetterClass('text-animate-hover'), 4000)
@@ -30,8 +31,8 @@ import {AnimatedLetters} from '../'
 
             <h2>React Developer / JavaScript Expert</h2>
             <Link to ='contact' className='flat-btn'>CONTACT ME</Link>
-
         </div>
+        <Logo />
     </div>
   )
 }
