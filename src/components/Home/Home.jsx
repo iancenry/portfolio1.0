@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './Home.scss'
 import { useEffect, useState } from 'react'
 import {AnimatedLetters, Logo} from '../'
+import Loader from 'react-loaders'
 
  const Home = () => {
   //default animation name = text-animate
@@ -16,24 +17,27 @@ import {AnimatedLetters, Logo} from '../'
   }, [])
 
   return (
-    <div className="container home-page">
-        <div className="animated-text-zone">
-            <h1>
-              <span className={letterClass}>H</span>              
-              <span className={`${letterClass} _12`}>i,</span>              
-              <br /> 
-              <span className={`${letterClass} _13`}>I</span> <span className={`${letterClass} _14`}>am</span>
-              <img src={LogoTitle} alt="developer" />
-              <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
-              <br />
-              <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
-            </h1>
+    <>
+      <div className="container home-page">
+          <div className="animated-text-zone">
+              <h1>
+                <span className={letterClass}>H</span>              
+                <span className={`${letterClass} _12`}>i,</span>              
+                <br /> 
+                <span className={`${letterClass} _13`}>I</span> <span className={`${letterClass} _14`}>am</span>
+                <img src={LogoTitle} alt="developer" />
+                <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+                <br />
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
+              </h1>
 
-            <h2>React Developer / JavaScript Expert</h2>
-            <Link to ='contact' className='flat-btn'>CONTACT ME</Link>
-        </div>
-        <Logo />
-    </div>
+              <h2>React Developer / JavaScript Expert</h2>
+              <Link to ='contact' className='flat-btn'>CONTACT ME</Link>
+          </div>
+          <Logo />
+      </div>
+      <Loader type='pacman' />
+    </>
   )
 }
 
