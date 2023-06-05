@@ -15,10 +15,10 @@ const Sidebar = () => (
       <NavLink to='/' className={({isActive}) => isActive ? 'active' : ''}>
         <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
       </NavLink>
-      <NavLink to='about' className={({isActive}) => isActive ? 'active' : 'about-link'}>
+      <NavLink to='about' className={({isActive}) => isActive ? 'active about-link' : 'about-link'}>
         <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
       </NavLink>
-      <NavLink to='contact' className={({isActive}) => isActive ? 'active' : 'contact-link'}>
+      <NavLink to='contact' className={({isActive}) => isActive ? 'active contact-link' : 'contact-link'}>
         <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
       </NavLink>
     </nav>
