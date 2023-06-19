@@ -5,5 +5,15 @@ import AnimatedLetters from './AnimatedLetters/AnimatedLetters'
 import Logo from './Home/Logo/Logo'
 import About from './About/About'
 import Contact from './Contact/Contact'
+import Dashboard from './Dashboard/Dashboard'
 
-export { Layout, Sidebar, Home, AnimatedLetters, Logo, About, Contact }
+export {
+  Layout,
+  Sidebar,
+  Home,
+  AnimatedLetters,
+  Logo,
+  About,
+  Contact,
+  Dashboard,
+}
