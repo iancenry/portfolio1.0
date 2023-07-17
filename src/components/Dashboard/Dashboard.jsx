@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import Home from './home'
-import Login from '../Login'
+import Login from '../Login/Login'
 
 const Dashboard = () => {
   const [user, setUser] = useState(null)
   const auth = getAuth()
-
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -16,7 +15,6 @@ const Dashboard = () => {
       }
     })
   }, [])
-
   return <div>{user ? <Home /> : <Login />}</div>
 }
 

@@ -6,6 +6,7 @@ import Logo from './Home/Logo/Logo'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import Dashboard from './Dashboard/Dashboard'
+import Portfolio from './Portfolio/Portfolio'
 
 export {
   Layout,
@@ -16,4 +17,5 @@ export {
   About,
   Contact,
   Dashboard,
+  Portfolio,
 }
